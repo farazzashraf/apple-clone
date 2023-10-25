@@ -52,27 +52,17 @@ const repeat = function () {
 
 repeat(); // Call the repeat function
 
+const header = document.querySelector('header');
+const dropdowns = document.querySelectorAll('.dropdown');
 
+dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('mouseover', () => {
+        header.classList.add('header-hovered');
+    });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const dropdown = document.querySelector(".dropdown");
-//     const header = document.getElementById("main-header");
-//     const backdrop = document.querySelector(".backdrop");
+    dropdown.addEventListener('mouseout', () => {
+        header.classList.remove('header-hovered');
+    });
+});
 
-//     dropdown.addEventListener("mouseenter", function () {
-//         header.classList.add("header-hovered");
-//         backdrop.style.display = "block"; // Show the backdrop
-//         setTimeout(() => {
-//             backdrop.style.opacity = 1; // Fade in the backdrop
-//         }, 10);
-//     });
-
-//     dropdown.addEventListener("mouseleave", function () {
-//         header.classList.remove("header-hovered");
-//         backdrop.style.opacity = 0; // Fade out the backdrop
-//         setTimeout(() => {
-//             backdrop.style.display = "none"; // Hide the backdrop
-//         }, 300); // Adjust the duration to match your transition time
-//     });
-// });
 
