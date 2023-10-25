@@ -75,11 +75,11 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
-    max-height: 25rem;
+    max-height: 30rem;
 }
 
-.dropdown:hover ~ body {
-    backdrop-filter: blur(45rem); 
+.dropdown:hover~body {
+    backdrop-filter: blur(45rem);
 }
 
 #main-header.header-hovered {
@@ -142,15 +142,43 @@ header {
     margin-bottom: 1rem;
 }
 
+.search {
+    position: relative;
+    
+}
 
+.search-input img {
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+}
 
+.search input {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+}
 
+.search input::placeholder {
+    font-size: 1.3rem;
+    color: #ffffff8d;
+}
 
-
-main {}
+.search input:focus {
+    outline: none;
+}
 
 .sparkling-section {
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .sparkling-section img {
@@ -160,6 +188,7 @@ main {}
 
 .section-1 {
     background: #010001;
+    width: 100%;
     text-align: center;
     color: white;
     padding: 5rem 0;
@@ -191,12 +220,12 @@ main {}
 }
 
 .section-2 {
+    width: 100%;
     background: #000000;
     color: white;
     margin: 1rem 0;
     padding: 4rem 0;
     text-align: center;
-    width: 100%;
     /* padding-bottom: 0; */
 }
 
@@ -247,6 +276,7 @@ main {}
 }
 
 .section-2 .iphone-15-pro img {
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -641,11 +671,12 @@ footer {
     text-align: justify;
     max-width: 100%;
     background: #F5F5F7;
-    padding: 2rem 20rem;
-    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 footer .paragraph {
+    max-width: 70%;
+    margin: 0 auto;
     font-size: .7rem;
 }
 
@@ -656,15 +687,18 @@ a {
 }
 
 hr {
-    margin: 1rem 0;
+    margin: 1rem auto;
     opacity: .3;
     height: 1px;
     background: rgba(128, 128, 128, 0.4);
+    width: 70%;
 }
 
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 70%;
+    margin: 0 auto;
 
 }
 
@@ -717,6 +751,9 @@ hr {
 }
 
 .more-ways {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
     font-size: .8rem;
     color: rgba(0, 0, 0, 0.555);
 }
@@ -727,6 +764,8 @@ hr {
 }
 
 .copyright-india {
+    width: 70%;
+    margin: 0 auto;
     margin-top: -.8rem;
     display: flex;
     justify-content: space-between;
