@@ -6,7 +6,7 @@ p,
 ul {
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 body {
@@ -253,7 +253,7 @@ main {
     position: relative;
 }
 
-.section-2 ul {
+.section-2>ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,7 +344,7 @@ main {
     z-index: -1;
 }
 
-.section-3 .iphone-15 img {
+.section-3 .iphone-15>img {
     position: relative;
     top: .3rem;
     width: 85%;
@@ -378,7 +378,7 @@ main {
     font-size: 1.2rem;
 }
 
-.ipad-watch-etc ul {
+.ipad-watch-etc>ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -422,9 +422,8 @@ main {
 
 .apple-watch {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center
 }
 
 .apple-watch img {
@@ -485,7 +484,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .apple-watch2 img {
